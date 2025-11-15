@@ -1,0 +1,96 @@
+/*MENU TOPHEADER*/
+.topheader {
+  position: fixed;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.Menu-Horizontal li a {
+  text-decoration: none;
+  padding: 15px 20px;
+  color: black;
+}
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+.Menu-Vertical {
+  background-color: aliceblue;
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 200px;
+  list-style: none;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+.Menu-Vertical li a {
+  display: block;
+  color: black;
+}
+.div.privi-video iframe {
+  max-width: 100px;
+  max-width: 500px;
+}
+/* FORMULARIO*/
+.seccion-formulario {
+  background-color: aliceblue;
+  padding: 30px;
+  border: 3px solid blue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.div-cont-formulario {
+  background-color: aqua;
+  padding: 30px;
+  border: 2px solid blueviolet;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+.campo {
+  background-color: gray;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid crimson;
+  border-radius: 5px;
+}
+.formulario-label {
+  display: block;
+  color: chocolate;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.formulario input[type="text"],
+.formulario select {
+  width: 95%;
+  padding: 10px;
+  border: 1.5px solid thistle;
+  border-radius: 3px;
+}
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  background-color: azure;
+  border: 1px solid salmon;
+  border-radius: 2px;
+}
+.formulario button {
+  background-color: blanchedalmond;
+  border: 2px solid gold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
