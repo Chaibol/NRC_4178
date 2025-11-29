@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Honk&family=Noto+Sans+Mono:wght@100..900&family=Pacifico&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Noto+Sans+Mono:wght@100..900&family=Pacifico&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
 /*MENU TOPHEADER*/
 .topheader {
   position: fixed;
@@ -14,6 +16,7 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+  font-family: "Fugaz One", sans-serif;
 }
 .Menu-Horizontal li a {
   text-decoration: none;
@@ -24,7 +27,7 @@
   color: red;
 }
 .Menu-Vertical {
-  background-color: aliceblue;
+  background-color: whitesmoke;
   padding: 0;
   position: absolute;
   display: none;
@@ -42,6 +45,95 @@
   max-width: 100px;
   max-width: 500px;
 }
+
+/*SECCION TOP SEMANAL*/
+
+.seccion-top {
+  padding: 60px 20px;
+  background-color: beige;
+}
+
+.div-gnral-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.div-top-texto {
+  flex: 1;
+}
+
+.div-top-texto h2 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+.div-top-texto p {
+  color: black;
+  line-height: 1.6;
+}
+
+.div-top-texto button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.div-top-img {
+  flex: 1;
+}
+
+.div-top-img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/*SECCION RECETAS*/
+
+.seccion-receta {
+  padding: 60px 20px;
+  background-color: beige;
+}
+
+.div-gnral-receta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.div-receta-texto {
+  flex: 1;
+}
+
+.div-receta-texto h2 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+.div-receta-texto p {
+  color: black;
+  line-height: 1.6;
+}
+
+.div-receta-video {
+  flex: 1;
+}
+
+.div-top-img iframe {
+  width: 100%;
+  max-width: 500px;
+}
+
 /* FORMULARIO*/
 .seccion-formulario {
   background-color: aliceblue;
@@ -51,6 +143,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  font-family: "Noto Sans Mono", monospace;
 }
 .div-cont-formulario {
   background-color: aqua;
@@ -79,6 +172,7 @@
   padding: 10px;
   border: 1.5px solid thistle;
   border-radius: 3px;
+  font-family: "Noto Sans Mono", monospace;
 }
 .lista-checkbox,
 .lista-radio {
@@ -93,4 +187,5 @@
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
+  font-family: "Noto Sans Mono", monospace;
 }

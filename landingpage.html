@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img
+          width="80"
+          height="70"
+          src="logo/png-transparent-club-universitario-de-deportes-peruvian-primera-division-alianza-lima-peru-national-football-team-torneo-de-promocion-y-reserva-football-text-trademark-sport-thumbnail.png"
+          alt=""
+        />
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="menu-toggle" aria-label="Abrir menú">
+          &#9776;
+          <!-- Ícono de hamburguesa -->
+        </button>
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href=" ">Promociones</a></li>
+        <li>
+          <a href=" ">Soluciones</a>
+          <ul class="Menu-Vertical">
+            <li><a href=" ">Servicios Financieros</a></li>
+            <li><a href=" ">Seguros</a></li>
+            <li><a href=" ">Soluciones</a></li>
+            <li><a href=" ">Mundo Diners</a></li>
+          </ul>
+        </li>
+        <li><a href=" ">Privilegios</a></li>
+        <li><a href=" ">Canales</a></li>
+        <li><a href="#contactanos">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--SECCION TOP-->
+    <section class="seccion-top">
+      <div class="div-gnral-top">
+        <div class="div-top-texto">
+          <h2>Descubre las nuevas delicias de nuestro Top Semanal!</h2>
+          <p>
+            En esta sección, déjate sorprender con nuestras principales
+            recomendaciones de la semana: postres sugeridos y votados por otros
+            usuarios, que los han llevado a lo más alto de este top.
+          </p>
+          <p>
+            Recuerda que tu postre también puede aparecer en este ranking! Solo
+            necesitas registrarte y subir la preparación de tu dulce favorito
+            para comenzar a compartir tus creaciones con toda la comunidad
+          </p>
+          <button>Leer más...</button>
+        </div>
+
+        <div class="div-top-img">
+          <img src="postres.png" alt="postre" />
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION RECETAS-->
+
+    <section class="seccion-receta">
+      <div class="div-gnral-receta">
+        <div class="div-receta-texto">
+          <h2>Nuevos Postres</h2>
+          <p>
+            En esta sección podrás descubrir deliciosos postres y creaciones
+            dulces que te encantarán. Atrévete a preparar estas recetas
+            irresistibles compartidas por amantes de la repostería
+          </p>
+          <p></p>
+        </div>
+
+        <div class="div-receta-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/bpBwyy2P_5g?si=xEpcjxfwyygLJ0EY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <section class="seccion-privi">
+      <div class="div-gral-privi">
+        <div class="div.privi-video"></div>
+      </div>
+    </section>
+    <!--Forumulario-->
+    <section class="seccion-formulario" id="contactanos">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <!--DIV1-->
+          <div class="campo">
+            <label for="nombre">Nombres Completo</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+          <!--DIV2-LISTA DESPEGABLE-->
+          <div class="campo">
+            <label for="nombre">Pais:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un Pais</option>
+              <option value="Peru">Peru</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brasil">Brasil</option>
+            </select>
+          </div>
+          <!--DIV 3-CHECKBOX-->
+          <div class="campo">
+            <label> Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Queque"
+                  />Queque</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Pye"
+                  />Pye</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Tartaleta"
+                  />Tartaleta</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Chifon"
+                  />Chifon</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--DIV 4-RADIO-->
+          <div class="campo">
+            <label> Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="Sexo" value="m" />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="Sexo" value="f" />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button input type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/…/Logo_oficial_de_Universitario.png"
+              alt="Universitario"
+              class="footer-logo"
+            />
+            <p>Club Universitario de Deportes</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documento/obtenerDocumento.pdf">Política de Privacidad</a>
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documento/obtenerDocumento.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Encuentranos en</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>

@@ -1,147 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="Pie.css" />
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <nav class="topheader">
-      <a href="" class="logo">
-        <img
-          width="80"
-          height="70"
-          src="logo/png-transparent-club-universitario-de-deportes-peruvian-primera-division-alianza-lima-peru-national-football-team-torneo-de-promocion-y-reserva-football-text-trademark-sport-thumbnail.png"
-          alt=""
-        />
-      </a>
+    <section class="login-container">
+      <div class="login-box">
+        <h2>Complete los campos</h2>
 
-      <ul class="Menu-Horizontal">
-        <li><a href=" ">Promociones</a></li>
-        <li>
-          <a href=" ">Soluciones</a>
-          <ul class="Menu-Vertical">
-            <li><a href=" ">Servicios Financieros</a></li>
-            <li><a href=" ">Seguros</a></li>
-            <li><a href=" ">Soluciones</a></li>
-            <li><a href=" ">Mundo Diners</a></li>
-          </ul>
-        </li>
-        <li><a href=" ">Privilegios</a></li>
-        <li><a href=" ">Canales</a></li>
-        <li><a href="#contactanos">Contactanos</a></li>
-      </ul>
-    </nav>
-    <!---->
-    <section class="seccion-privi">
-      <div class="div-gral-privi">
-        <div class="div.privi-video">
-        </div>
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Correo Electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduzca su correo electrónico"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Contraseña (matutazo)</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduzca su contraseña"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
       </div>
     </section>
-    <!--Forumulario-->
-      <section class="seccion-formulario" id="contactanos">
-        <div class="div-cont-formulario">
-          <h2> Formulario de Registro</h2>
-          <p> Complete todos los campos</p>
-          <form class="formulario">
-            <!--DIV1-->
-            <div class="campo">
-              <label for="nombre">Nombres Completo</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres">
-            </div>
-                <!--DIV2-LISTA DESPEGABLE-->
-            <div class="campo">
-              <label for="nombre">Pais:</label>
-              <select id="pais" name="pais">
-                <option value="">seleccione un pais</option>
-                <option value="Peru">Peru</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Brasil">Brasil</option>
-              </select>
-            </div>
-            <!--DIV 3-CHECKBOX-->
-            <div class="campo">
-              <label> Intereses:</label>
-              <ul class="lista-checkbox">
-                  <li><label><input type="checkbox" name="Intereses" value="Queque">Queque</label></li>
-                  <li><label><input type="checkbox" name="Intereses" value="Pye">Pye</label></li>
-                  <li><label><input type="checkbox" name="Intereses" value="Tartaleta">Tartaleta</label></li>
-                  <li><label><input type="checkbox" name="Intereses" value="Chifon">Chifon</label></li>
-              </ul>
-            </div>
-            <!--DIV 4-RADIO-->
-            <div class="campo">
-              <label> Sexo:</label>
-              <ul class="lista-radio">
-                  <li><label><input type="radio" name="Sexo" value="m">Masculino</label></li>
-                  <li><label><input type="radio" name="Sexo" value="f">Femenino</label></li>
-              </ul>
-            </div>
-            <button input type="submit">Enviar</button>
-          </form>
 
-            <!-- PIE DE PAGINA -->
-
-    <section id="footer">
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
-          <div class="footer-brand">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/…/Logo_oficial_de_Universitario.png"
-              alt="Universitario"
-              class="footer-logo"
-            />
-            <p>Club Universitario de Deportes</p>
-            <small>© 2025 Todos los derechos reservados</small>
-          </div>
-
-          <!-- Enlaces legales -->
-          <div class="footer-links">
-            <h4>Legal</h4>
-            <a href="/Documento/obtenerDocumento.pdf"
-              >Política de Privacidad</a
-            >
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
-            <a href="#">Términos y Condiciones</a>
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
-            <a href="/Documento/obtenerDocumento.pdf">Protección de Datos</a>
-          </div>
-
-          <!-- Redes sociales con íconos personalizados -->
-          <div class="footer-social">
-            <h4>Encuentranos en </h4>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-                alt="Twitter"
-                class="social-icon"
-            /></a>
-          </div>
-        </div>
-      </footer>
-    </section>
+    <script src="login.js"></script>
   </body>
 </html>

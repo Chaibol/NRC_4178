@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Pacifico&display=swap");
 /* Footer general */
 .footer {
   background-color: skyblue;
   color: black;
   padding: 2rem 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Honk", system-ui;
 }
 
 /* Contenedor flexible para 3 columnas */
